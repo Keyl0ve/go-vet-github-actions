@@ -30,24 +30,24 @@ func (u User) a() {
 	u.country.userNumber = "aaa"
 }
 
-func (uu User) b() {
-	uu.userName = "aaa"
-	uu.age = 10
-	uu.country.userFriend.userNum = 10
-}
+// func (uu User) b() {
+// 	uu.userName = "aaa"
+// 	uu.age = 10
+// 	uu.country.userFriend.userNum = 10
+// }
 
-func (uuu User) c() {
-	uuu.userName = "aaa"
-	uuu.age = 10
-}
+// func (uuu User) c() {
+// 	uuu.userName = "aaa"
+// 	uuu.age = 10
+// }
 
-func (uuuu User) d() {
-	uuuu.userName = "aaa"
-	uuuu.age = 10
-}
+// func (uuuu User) d() {
+// 	uuuu.userName = "aaa"
+// 	uuuu.age = 10
+// }
 
-func (user User) e() {
-	user.userName = "John"
-	user.country.userNumber = "aaa"
-	user.country.address = "Japan"
-}
+// func (user User) e() {
+// 	user.userName = "John"
+// 	user.country.userNumber = "aaa"
+// 	user.country.address = "Japan"
+// }
