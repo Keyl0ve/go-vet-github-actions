@@ -27,8 +27,5 @@ jobs:
     - name: install vettool
       run : GOBIN=$(pwd) go install github.com/Keyl0ve/termcheck/cmd/termcheck@latest
 
-    - name: check which
-      run: which termcheck
-
     - name: Go vet
       run: go vet -vettool=($which termcheck) ./...
