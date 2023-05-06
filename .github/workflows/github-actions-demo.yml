@@ -17,4 +17,4 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: run vet
-        run: go vet -vettool=$(pwd)/termcheck
+        run: go vet -vettool=$(pwd)/termcheck ./...
