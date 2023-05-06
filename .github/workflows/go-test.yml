@@ -24,11 +24,11 @@ jobs:
     - name: Test
       run: go test -v ./...
 
+    - name: $(pwd)
+      run: pwd
+
     - name: install vettool
       run : GOBIN=$(pwd) go install github.com/Keyl0ve/termcheck/cmd/termcheck@latest
 
     - name: Go vet
       run: go vet -vettool=$(pwd)/termcheck
-
-    - name: $(pwd)
-      run: pwd
