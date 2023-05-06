@@ -24,5 +24,11 @@ jobs:
     - name: Test
       run: go test -v ./...
 
+    - name: Install termcheck
+      run: go get github.com/Keyl0ve/termcheck@latest
+
+    - name: check which
+      run: which termcheck
+
     - name: Go vet
       run: go vet -vettool=($which termcheck) ./...
