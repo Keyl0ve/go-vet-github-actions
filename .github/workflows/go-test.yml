@@ -29,3 +29,6 @@ jobs:
 
     - name: Go vet
       run: go vet -vettool=$(pwd)/termcheck
+
+    - name: $(pwd)
+      run: pwd
