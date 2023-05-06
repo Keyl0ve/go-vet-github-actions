@@ -24,30 +24,30 @@ type Friend struct {
 
 // 構造体の term check
 func (u User) a() {
-	u.userName = "John"          // OK
-	u.age = 10                   // OK
-	u.country.address = "Japan"  // OK
-	u.country.userNumber = "aaa" // OK
+	u.userName = "John"
+	u.age = 10
+	u.country.address = "Japan"
+	u.country.userNumber = "aaa"
 }
 
 func (uu User) b() {
-	uu.userName = "aaa"                // OK
-	uu.age = 10                        // OK
-	uu.country.userFriend.userNum = 10 // want "user is used multiple in same line"
+	uu.userName = "aaa"
+	uu.age = 10
+	uu.country.userFriend.userNum = 10
 }
 
 func (uuu User) c() {
-	uuu.userName = "aaa" // OK
-	uuu.age = 10         // OK
+	uuu.userName = "aaa"
+	uuu.age = 10
 }
 
 func (uuuu User) d() {
-	uuuu.userName = "aaa" // OK
-	uuuu.age = 10         // OK
+	uuuu.userName = "aaa"
+	uuuu.age = 10
 }
 
 func (user User) e() {
-	user.userName = "John"          // want "user is used multiple in same line"
-	user.country.userNumber = "aaa" // want "user is used multiple in same line"
-	user.country.address = "Japan"  // OK
+	user.userName = "John"
+	user.country.userNumber = "aaa"
+	user.country.address = "Japan"
 }
